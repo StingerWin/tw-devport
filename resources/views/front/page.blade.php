@@ -54,7 +54,7 @@
                         /** @var \App\Models\Winning $winning */
                     @endphp
                     @if($winning = session('winning'))
-                        <div class="alert {{ $winning->is_win ? 'alert-success' : 'alert-danger' }} my-2">
+                        <div class="alert {{ $winning->is_win ? 'alert-success' : 'alert-danger' }} my-2 text-center">
                             <b>{{ $winning->text_win }}</b>
                         </div>
                     @endif

@@ -48,7 +48,7 @@ class Winning extends Model
 
     public function getTextWinAttribute(): string
     {
-        return ($this->is_win ? __('Win') : __('Lose')) ." {$this->total}";
+        return ($this->is_win ? __('Win') : __('Lose')) ."; Number {$this->rand_number}; Sum {$this->total}";
     }
 
 
